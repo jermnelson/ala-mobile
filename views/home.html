@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>{% block title %}ALA - Prospector Demo{% endblock %}
+        </title>
+        {% block base-css %}
+        <link rel="stylesheet" href="assets/css/Prospector1.css" />
+        <link rel="stylesheet" href="assets/css/jquery.mobile.min.css" />
+        <link rel="stylesheet" href="assets/css/app.css" />
+        {% endblock %}
+        {% block base-js %}
+        <script src="assets/js/jquery.js">
+        </script>
+        <script src="assets/js/jquery.mobile.min.js">
+        </script>
+        <script src="app.js">
+        </script>
+        {% block more-css %}
+        <!-- User-generated css -->
+        <style>
+        </style>
+        {% endblock %}
+        {% block more-js %}
+        <!-- User-generated js -->
+        <script>
+        try {
+         $(function(){
+         });
+        } catch (error) {
+         console.error("Your javascript has an error: " + error);
+        }
+        </script>
+       {% endblock %}
+    </head>
+    <body>
+     {% block page %}{% endblock %}
+        <div data-role="page" id="page1">
+            <div data-theme="" data-role="header">
+                <h3>
+                    Header
+                </h3>
+                <div data-role="fieldcontain">
+                    <label for="textinput1">
+                        Search
+                    </label>
+                    <input name="" id="textinput1" placeholder="Find books, movies, music,&amp; more!" value="" data-mini="true" type="text" />
+                </div>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Featured Items
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Title1
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Title2
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Prospector News
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Prospector joins RLSP..
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            JeffCo public library...
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+    </body>
+</html>

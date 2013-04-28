@@ -1,0 +1,52 @@
+{% extends 'app.html' %}
+{% block page %}
+<div data-role="page" id="page1">
+   <div data-theme="a" data-role="header">
+    <h3>Prospector App</h3>
+      <div data-role="fieldcontain">
+       <label for="textinput1">
+         Search
+       </label>
+       <input name="" id="textinput1" placeholder="Find books, movies, music,&amp; more!" value="" data-mini="true" type="text" />
+       <input type="submit" value="Search"></input>
+                </div>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Featured Items
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Title1
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Title2
+                        </a>
+                    </li>
+                </ul>
+                <ul data-role="listview" data-divider-theme="" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Prospector News
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            Prospector joins RLSP..
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page1" data-transition="slide">
+                            JeffCo public library...
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    Footer
+                </h3>
+            </div>
+        </div>
+{% endblock %}

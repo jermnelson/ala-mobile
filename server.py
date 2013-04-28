@@ -26,7 +26,7 @@ def send_asset(type_of,filename):
 
 @route("/carl")
 def carl():
-    return template('carl.html')
+    return template('page.html')
 
 @route("/carl-results")
 def carl_results():
